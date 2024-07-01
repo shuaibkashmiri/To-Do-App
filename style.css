@@ -1,0 +1,111 @@
+body{
+    background-color: #333;
+    margin: 0%;
+}
+
+.main{
+    width: 100%;
+}
+
+.container{
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 30%;
+    height: 70vh;
+    background-color:beige;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10%;
+}
+h1{
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.inputs{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.input-box{
+    height: 2em;
+    width: 80%;
+    font-size: .5em;
+    border-radius: 20px;
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+.btn{
+    background-color: #03c04a;
+    border: none;
+    border-radius: 10px;
+    color: beige;
+    margin-left: 10px;
+}
+
+
+
+
+
+.remove{
+    border-radius: 50%;
+    background-color: black;
+    color: beige;
+    height: 20px;
+    margin-top: 3%;
+}
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    line-height: 40px;
+    position: relative;
+    left: 20px;
+    
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked-10.png);
+    background-size: cover;
+    background-position: center;
+    left: -40px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(Sign-check-icon.png);
+}
+
+ul li span{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    color: #555;
+    text-align: center;
+    line-height: 40px;
+    right: 10%;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
